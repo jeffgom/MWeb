@@ -2,10 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Merkur.BL
 {
@@ -174,6 +176,8 @@ namespace Merkur.BL
         public Tipo Tipo { get; set; }
         public DateTime FechadeEntrega { get; set; }
         public double Precio { get; set; }
+        [Display(Name = "Imagen")]
+        public string UrlImagen { get; set; }
         public bool Activo { get; set; }
         public string Longitud1 { get; set; }
         public string Longitud2 { get; set; }
